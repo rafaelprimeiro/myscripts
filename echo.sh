@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-echo it's work fine 😁😁😁
+echo "it's work fine 😁😁😁"
 
