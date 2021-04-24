@@ -3,6 +3,7 @@
 if test -f "composer.json"; then
     echo "Admin url: $(./bin/magento info:adminuri)"
 else 
+    echo "DB host: $db_host"
     composer create-project --repository-url=https://${public_key}:${private_key}@repo.magento.com/ magento/project-community-edition=2.4.2 . \
     && bin/magento setup:install \
         --base-url="${base_url}" \
