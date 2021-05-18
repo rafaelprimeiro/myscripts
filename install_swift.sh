@@ -19,6 +19,24 @@ if [[ $1 == 'mac' ]]; then
     echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.zshenv
     echo 'eval "$(swiftenv init -)"' >> ~/.zshenv
 elif [[ $1 == 'linux' ]]; then
+    echo 'Install dependences...'
+    sudo apt-get install \
+          binutils \
+          git \
+          gnupg2 \
+          libc6-dev \
+          libcurl4 \
+          libedit2 \
+          libgcc-9-dev \
+          libpython2.7 \
+          libsqlite3-0 \
+          libstdc++-9-dev \
+          libxml2 \
+          libz3-dev \
+          pkg-config \
+          tzdata \
+          zlib1g-dev
+
     echo 'export SWIFTENV_ROOT="$HOME/.swiftenv"' >> ~/.bashrc
     echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.bashrc
     echo 'eval "$(swiftenv init -)"' >> ~/.bashrc
