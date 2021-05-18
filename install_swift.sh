@@ -35,7 +35,9 @@ elif [[ $1 == 'linux' ]]; then
           libz3-dev \
           pkg-config \
           tzdata \
-          zlib1g-dev
+          zlib1g-dev \
+          openssl \
+          libssl-dev
 
     echo 'export SWIFTENV_ROOT="$HOME/.swiftenv"' >> ~/.bashrc
     echo 'export PATH="$SWIFTENV_ROOT/bin:$PATH"' >> ~/.bashrc
