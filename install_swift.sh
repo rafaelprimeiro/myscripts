@@ -23,22 +23,17 @@ elif [[ $1 == 'linux' ]]; then
     sudo apt-get install \
           binutils \
           git \
-          gnupg2 \
           libc6-dev \
           libcurl4 \
           libedit2 \
-          libgcc-9-dev \
+          libgcc-5-dev \
           libpython2.7 \
           libsqlite3-0 \
-          libstdc++-9-dev \
+          libstdc++-5-dev \
           libxml2 \
-          libz3-dev \
           pkg-config \
           tzdata \
           zlib1g-dev \
-          openssl \
-          libssl-dev \
-          libcurl4-openssl-dev \
           -y
 
     echo 'export SWIFTENV_ROOT="$HOME/.swiftenv"' >> ~/.bashrc
