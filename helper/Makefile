@@ -4,4 +4,4 @@ XCODE_USER_SNIPPETS_DIR=~/Library/Developer/Xcode/UserData/CodeSnippets
 TEMPLATES_DIR=Coordinate\ Clean\ Swift
 
 dns:
-	sudo killall -HUP mDNSResponder && echo "say dns cleared successfully"
+	sudo killall -HUP mDNSResponder && echo "has been dns cleared successfully"
