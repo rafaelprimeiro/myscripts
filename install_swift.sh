@@ -23,16 +23,19 @@ elif [[ $1 == 'linux' ]]; then
     sudo apt-get install \
           binutils \
           git \
+          gnupg2 \
           libc6-dev \
           libcurl4 \
           libedit2 \
-          libgcc-5-dev \
+          libgcc-9-dev \
           libpython2.7 \
           libsqlite3-0 \
-          libstdc++-5-dev \
+          libstdc++-9-dev \
           libxml2 \
+          libz3-dev \
           pkg-config \
           tzdata \
+          uuid-dev \
           zlib1g-dev \
           -y
 
